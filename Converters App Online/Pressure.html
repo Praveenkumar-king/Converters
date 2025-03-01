@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pressure Converter | Converters</title>
+    <link rel="stylesheet" href="CSS/Pressure.css">
+    <link rel="icon" href="img/PK New Logo.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="converter-container">
+        <h1>Pressure Converter</h1>
+        <label for="pressureFrom">From:</label>
+        <select id="pressureFrom">
+            <option value="pascal">Pascal</option>
+            <option value="bar">Bar</option>
+            <option value="psi">PSI</option>
+        </select>
+        <label for="pressureTo">To:</label>
+        <select id="pressureTo">
+            <option value="pascal">Pascal</option>
+            <option value="bar">Bar</option>
+            <option value="psi">PSI</option>
+        </select>
+        <label for="pressureValue">Value:</label>
+        <input type="number" id="pressureValue" placeholder="Enter pressure" />
+        <button onclick="convertPressure()">Convert</button>
+        <h2 id="pressureResult"></h2>
+    </div>
+
+    <script src="JS/Pressure.js"></script>
+</body>
+</html>

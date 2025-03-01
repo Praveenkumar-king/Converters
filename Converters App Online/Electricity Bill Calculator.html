@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity Bill Calculator</title>
+    <link rel="stylesheet" href="CSS/Electricity.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h2>Electricity Bill Calculator</h2>
+        <form id="electricity-form">
+            <label for="unit-consumed">Units Consumed (kWh):</label>
+            <input type="number" id="unit-consumed" name="unit-consumed" placeholder="Enter units" required>
+
+            <label for="rate-per-unit">Rate per Unit (₹):</label>
+            <input type="number" id="rate-per-unit" name="rate-per-unit" placeholder="Enter rate per unit" required>
+
+            <label for="fixed-charge">Fixed Charge (₹):</label>
+            <input type="number" id="fixed-charge" name="fixed-charge" placeholder="Enter fixed charge" required>
+
+            <button type="button" id="calculate-btn">Calculate Bill</button>
+        </form>
+        <p id="result"></p>
+    </div>
+
+    <script src="JS/Electricity.js"></script>
+</body>
+</html>

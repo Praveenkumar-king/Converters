@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI Calculator | Coverters</title>
+    <link rel="stylesheet" href="CSS/EMI.css">
+    <script src="JS/EMI.js" defer></script>
+    <link rel="icon" href="img/PK New Logo.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>EMI Calculator</h1>
+        <label for="principal">Principal Amount:</label>
+        <input type="number" id="principal" placeholder="Enter principal amount">
+        <label for="rate">Annual Interest Rate (%):</label>
+        <input type="number" id="rate" placeholder="Enter annual interest rate">
+        <label for="years">Loan Tenure (Years):</label>
+        <input type="number" id="years" placeholder="Enter tenure in years">
+        <button onclick="calculateEMI()">Calculate EMI</button>
+        <div class="results">
+            <h2>EMI in INR: <span id="emi-inr">0</span> INR</h2>
+            <h2>EMI in USD: <span id="emi-usd">0</span> USD</h2>
+        </div>
+    </div>
+</body>
+</html>

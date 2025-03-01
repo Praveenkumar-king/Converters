@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Converter | Converters</title>
+    <link rel="stylesheet" href="CSS/Speed.css">
+    <link rel="icon" href="img/PK New Logo.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="converter-container">
+        <h1>Speed Converter</h1>
+        <label for="speedFrom">From:</label>
+        <select id="speedFrom">
+            <option value="kmph">km/h</option>
+            <option value="mph">mph</option>
+            <option value="mps">m/s</option>
+        </select>
+        <label for="speedTo">To:</label>
+        <select id="speedTo">
+            <option value="kmph">km/h</option>
+            <option value="mph">mph</option>
+            <option value="mps">m/s</option>
+        </select>
+        <label for="speedValue">Value:</label>
+        <input type="number" id="speedValue" placeholder="Enter speed" />
+        <button onclick="convertSpeed()">Convert</button>
+        <h2 id="speedResult"></h2>
+    </div>
+
+    <script src="JS/Speed.js"></script>
+</body>
+</html>

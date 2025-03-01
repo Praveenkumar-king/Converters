@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volume Converter | Converters</title>
+    <link rel="stylesheet" href="CSS/Volume.css">
+    <link rel="icon" href="img/PK New Logo.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="converter-container">
+        <h1>Volume Converter</h1>
+        <label for="volumeFrom">From:</label>
+        <select id="volumeFrom">
+            <option value="liters">Liters</option>
+            <option value="gallons">Gallons</option>
+            <option value="milliliters">Milliliters</option>
+        </select>
+        <label for="volumeTo">To:</label>
+        <select id="volumeTo">
+            <option value="liters">Liters</option>
+            <option value="gallons">Gallons</option>
+            <option value="milliliters">Milliliters</option>
+        </select>
+        <label for="volumeValue">Value:</label>
+        <input type="number" id="volumeValue" placeholder="Enter volume" />
+        <button onclick="convertVolume()">Convert</button>
+        <h2 id="volumeResult"></h2>
+    </div>
+
+    <script src="JS/Volume.js"></script>
+</body>
+</html>

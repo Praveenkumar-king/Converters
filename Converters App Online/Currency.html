@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter | Converters</title>
+    <link rel="stylesheet" href="CSS/Currency.css">
+    <link rel="icon" href="img/PK New Logo.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="converter-container">
+        <h1>Currency Converter</h1>
+        <label for="from">From:</label>
+        <select id="fromCurrency"></select>
+        <label for="to">To:</label>
+        <select id="toCurrency"></select>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" placeholder="Enter amount" />
+        <button onclick="convertCurrency()">Convert</button>
+        <h2 id="result"></h2>
+    </div>
+    
+    <script src="JS/Currency.js"></script>
+</body>
+</html>
